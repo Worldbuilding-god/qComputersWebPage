@@ -1,8 +1,44 @@
-.bongus{
-    list-style-type: none;
-    text-align: center;
+body{
+    display: flex;
+    flex-direction: column;
 }
 nav{
     background-color: rgb(118, 228, 255);
     border-radius: 10px;
+    text-align: center;
 }
+.img1{
+    background-image: url(/img/Quantum-computer-Chalmers_2017.jpg);
+    /*https://commons.wikimedia.org/wiki/File:Quantum-computer-Chalmers_2017.jpg*/
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    border-radius: 10px;
+    border: solid 1px black;
+}
+#ecs{
+    font-size:25px;
+    padding: 5px;
+}
+#ec-desc{
+    font-size:20px;
+}
+.nav{
+    list-style-type: none;
+}
+.round{
+    border-radius: 10px;
+    border: solid 1px black;
+    background-color: rgb(118, 228, 255);
+}
+.round h2{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.round p{
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
