@@ -2,8 +2,13 @@ body{
     display: flex;
     flex-direction: column;
 }
-nav{
+#nav{
     background-color: rgb(118, 228, 255);
+    border-radius: 10px;
+    text-align: center;
+}
+footer{
+    background-color: rgb(222, 217, 226);
     border-radius: 10px;
     text-align: center;
 }
@@ -40,5 +45,7 @@ nav{
 .round p{
     margin-left: 10px;
     padding-left: 10px;
+    margin-right: 10px;
+    padding-right: 10px;
 }
 
