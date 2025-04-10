@@ -5,12 +5,12 @@ body{
 }
 #nav{
     background-color: rgb(118, 228, 255);
-    border-radius: 10px;
+    border-radius: 10px 10px 0px 0px;
     text-align: center;
 }
 footer{
     background-color: rgb(222, 217, 226);
-    border-radius: 10px;
+    border-radius: 0px 0px 10px 10px;
     text-align: center;
 }
 .img1{
@@ -19,9 +19,9 @@ footer{
     background-position: center;
     background-repeat: no-repeat;
     height: 300px;
-    width: 100%;
+    width: 99.87%;
     background-size: cover;
-    border-radius: 10px;
+    /*border-radius: 0px 0px 10px 10px;*/
     border: solid 1px black;
 }
 #ecs{
@@ -35,8 +35,8 @@ footer{
     list-style-type: none;
 }
 .round{
-    border-radius: 10px;
-    border: solid 1px black;
+    /*border-radius: 10px;*/
+    /*border: solid 1px black;*/
     background-color: rgb(118, 228, 255);
 }
 .round h2{
@@ -49,7 +49,7 @@ footer{
     margin-right: 10px;
     padding-right: 10px;
 }
-a:visited{
+a:visited, a{
     color: rgb(108, 105, 141);
 }
 #nav a{
@@ -61,6 +61,6 @@ li div{
 li div:active{
     background-color: rgb(176, 239, 255);
 }
-li div:active{
-    background-color: rgb(176, 239, 255);
+.ttp{
+    text-decoration: underline;
 }

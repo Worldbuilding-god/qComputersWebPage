@@ -6,11 +6,27 @@
     <link href="style.css" rel="stylesheet">
     <title>Quantum Computers Homepage</title>
     <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- jQuery UI CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/themes/base/jquery-ui.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- jQuery UI JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js"></script>
+
     <script src="script.js"></script>
+
+    <script>
+        $( function() {
+          $( document ).tooltip();
+        } );
+    </script>
 </head>
 <body>
     <nav id="nav">
-        <div id = ecs><b>Quantum Computers (click to hide navigation)</b></div>
+        <div id = ecs><b>Quantum C⚛mputers (click to hide navigation)</b></div>
         <div id = ec-desc>
             <ul>
                 <li class="nav"><div><a href="index2.html">a</a></div></li>
@@ -22,12 +38,13 @@
     </nav>
     <div class="img1"></div>
     <div class="round">
-        <h2>Quantum Computers⁑ The next step‽</h2>
-        <p style="font-size: 18px;">Quantum computers are a relatively new technology. They blend the mathematics of computing with the sciences of the quantum world.<br><br>
-        Quantum computers can be understood as a special type of computing machine. Quantum computers use a type of computing base called "Qubits" which can be both "On' or "Off" simultaneously. This allows faster and more complex calculations to be preformed. This is due to some complex mathematics like the Bloch sphere, or complex numbers. Complex numbers are like normal numbers. Imagine an X Y plane, but instead of an X and Y axis, there is the normal number line, and the complex number line. One can shift into the complex by making the square root of a negative number, like √-1 .<br><br>
+        <h2>Quantum Computers: The next step<span class="ttp" title="This is an interrobang. Its a combination of a question mark and an exclamation point.">‽</span></h2>
+        <p style="font-size: 18px;">Quantum computers are a relatively new technology. They blend the mathematics of computing with the sciences of the quantum world. Most of the time they are <b>harder</b> to build.<br><br>
+        Quantum computers can be understood as a special type of <span class="ttp" title="A computing machine is a machine that uses logic gates (or an analogue of them) to compute mathematic operations">computing machine</span>. Quantum computers use a type of computing base called "Qubits" which can be both "On' or "Off" simultaneously. This allows <b>better</b>, <b>faster</b> more complex, and <b>stronger</b> calculations to be preformed. This is due to some complex mathematics like the <span class="ttp" title="In quantum mechanics and computing, the Bloch sphere is a geometrical representation of the pure state space of a two-level quantum mechanical system (qubit), named after the physicist Felix Bloch.">Bloch sphere</span>, or complex numbers. Complex numbers are like normal numbers. Imagine an X Y plane, but instead of an X and Y axis, there is the normal number line, and the complex number line. This is the <span class="ttp" title="In mathematics, the complex plane is the plane formed by the complex numbers, with a Cartesian coordinate system such that the horizontal x-axis, called the real axis, is formed by the real numbers, and the vertical y-axis, called the imaginary axis, is formed by the imaginary numbers.">complex plane</span>. One can shift into the complex by making the square root of a negative number, like <span class="ttp" title="Also called i.">√-1</span>.<br><br><span class="ttp" title=""></span>
         </p>
     </div>
-    <footer>
+    <!-- ⌬ ⚛ ⏣ ⬢ ⬡ -->
+    <footer id="f1234">
         <nav>
             <ul>
                 <li class="nav"><a href="index2.html">a</a></li>
@@ -37,17 +54,25 @@
             </ul>
         </nav>
         <p>&copy;2025 Ronald Smith</p>
+        <input title="Password? (hint: the bold words.)" id="passwordBox">
+        <button id="btn1">Click me</button>
     </footer>
     <script>
         $("#ecs").click(function(){
             $("#ec-desc").slideToggle("slow", function(){
-                if($("#ecs").html() == "<b>Quantum Computers (click to hide navigation)</b>"){
-                    $("#ecs").html("<b>Quantum Computers (click to show navigation)</b>")
+                if($("#ecs").html() == "<b>Quantum C⚛mputers (click to hide navigation)</b>"){
+                    $("#ecs").html("<b>Quantum C⚛mputers (click to show navigation)</b>");
                 } else{
-                    $("#ecs").html("<b>Quantum Computers (click to hide navigation)</b>")
+                    $("#ecs").html("<b>Quantum C⚛mputers (click to hide navigation)</b>");
                 }
             });
         });
+        $(".drag").draggable();
+        if($("#passwordBox").val() == "harder better faster stronger"){
+            $("#btn1").click(function(){
+                $("#f1234").append("<a href='https://youtu.be/yydNF8tuVmU?si=pu68HRjMsHDFcC74'></a>");
+            });
+        }
     </script>
 </body>
 </html>
